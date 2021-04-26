@@ -1,0 +1,17 @@
+H# Python3
+# Code By : اندوريد اللمعلومات 
+# My Blog : https://www.hels52h.ml/?m=1
+# My Ch Youtube : https://youtube.com/channel/UCTM1UomMEBJKp9Zz4tcARUg
+
+import pyautogui
+from time import sleep
+
+msg = input("Enter Your Msg >> :")
+num_msg = int(input("Chose Your Numbr of Msg >> :"))
+time_msg = float(input("Chose Your Time Of Msg >> :"))
+
+for num in range(num_msg + 1 ):
+    pyautogui.typewrite(msg)
+    sleep(time_msg)
+    pyautogui.press('enter')
+    sleep(time_msg)
